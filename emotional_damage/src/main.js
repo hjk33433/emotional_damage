@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueWordCloud from 'vue-b2wordcloud'
+import VueWordcloud from 'vue-b2wordcloud'
+Vue.use(VueWordcloud)
+
 Vue.config.productionTip = false
-Vue.use(VueWordCloud)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
