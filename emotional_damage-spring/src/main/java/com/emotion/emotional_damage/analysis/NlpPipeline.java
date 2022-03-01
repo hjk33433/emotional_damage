@@ -30,6 +30,7 @@ public class NlpPipeline {
             sentimentInt = RNNCoreAnnotations.getPredictedClass(tree);
             sentimentName = sentence.get(SentimentCoreAnnotations.SentimentClass.class);
             System.out.println(sentimentName + "\t" + sentimentInt + "\t" + sentence);
+            System.out.println("====================");
         }
     }
 }

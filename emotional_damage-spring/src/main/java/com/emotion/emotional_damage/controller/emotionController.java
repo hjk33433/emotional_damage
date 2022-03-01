@@ -24,4 +24,11 @@ public class emotionController {
         processText(text);
         return "";
     }
+
+    public static void main(String[] args) {
+        String text = "I was scolded by my boss.";
+        nlpPipeline  = new NlpPipeline();
+        nlpPipeline.init();
+        processText(text);
+    }
 }
