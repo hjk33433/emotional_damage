@@ -14,6 +14,6 @@ public class emotionController {
         //TODO 分析文本 关键字 统计
         //TODO 根据统计 对应 分类关键字
         //TODO 查询 相关数据
-        return "";
+        return queryText;
     }
 }

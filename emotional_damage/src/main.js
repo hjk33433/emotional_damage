@@ -6,6 +6,13 @@ import router from './router'
 import VueWordcloud from 'vue-b2wordcloud'
 import element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+
+import {getRequest, postRequest, deleteRequest, putRequest} from './http/http'
+Vue.prototype.getRequest = getRequest
+Vue.prototype.postRequest = postRequest
+Vue.prototype.deleteRequest = deleteRequest
+Vue.prototype.putRequest = putRequest
+
 Vue.use(VueWordcloud)
 Vue.use(element)
 Vue.config.productionTip = false

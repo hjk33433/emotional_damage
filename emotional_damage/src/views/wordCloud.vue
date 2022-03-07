@@ -59,7 +59,6 @@ el-header, .el-footer {
 </style>
 <script>
 import wordcloud from 'vue-wordcloud'
-import axios from 'axios'
 export default {
   name: 'app',
   components: {
@@ -70,8 +69,8 @@ export default {
       console.log('wordClickHandler', name, value, vm)
     },
     query () {
-      axios.post('', this.input).then(res => {
-
+      this.postRequest('/query', this.input).then(res => {
+        console.log(res)
       })
     }},
   data () {
